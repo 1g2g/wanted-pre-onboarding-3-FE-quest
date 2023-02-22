@@ -1,27 +1,15 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js + TypeScript App"/>
+  <header>Wanted Pre-onboarding course</header>
+  <section>
+    <nav>
+      <router-link to="/PageA">Page A</router-link>
+      <router-link to="/PageB">Page B</router-link>
+      <router-link to="/PageC">Page C</router-link>
+    </nav>
+    <article>
+      <router-view />
+    </article>
+  </section>
 </template>
 
-<script lang="ts">
-import { Options, Vue } from 'vue-class-component';
-import HelloWorld from './components/HelloWorld.vue';
-
-@Options({
-  components: {
-    HelloWorld,
-  },
-})
-export default class App extends Vue {}
-</script>
-
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
+<style lang="scss"></style>
